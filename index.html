@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.mVVuQT_tBPEUXP-i7CMd-QHaHa&pid=Api&P=0&h=220" alt="" id="back" >
+        <div class="gallary">
+            <h1>JS img collection</h1>
+            <div>
+                <span><img src="th (1).jpg" alt=""></span>
+                <span><img src="th (2).jpg" alt=""></span>
+                <span><img src="th (4).jpg" alt=""></span>
+            </div>
+            <div class="icon">
+                <span><img src="th (5).jpg" alt=""></span>
+                <span><img src="th (7).jpg" alt=""></span>
+                <span><img src="th (3).jpg" alt=""></span>
+            </div>
+        </div> 
+        <img src="https://tse2.mm.bing.net/th?id=OIP.1zD168uB0K--lbu8bduOrQHaIA&pid=Api&P=0&h=220" alt="" id="next" >
+    </div>
+
+    
+    <script>
+        let scroll=document.querySelector(".gallary");
+        let back=document.getElementById("back");
+        let next=document.getElementById("next");
+        next.addEventListener("click",()=>{
+            scroll.style.scrollBehavior="smooth";
+            scroll.scrollLeft+=900;
+        })
+        back.addEventListener("click",()=>{
+            scroll.style.scrollBehavior="smooth";
+
+            scroll.scrollLeft-=900;
+        })
+    </script>
+    
+      
+</body>
+</html>
